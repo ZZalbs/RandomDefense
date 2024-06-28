@@ -177,7 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 68180072}
   m_Layer: 0
-  m_Name: MovePoint (7)
+  m_Name: WayPoint (7)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1679,7 +1679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 649152151}
   m_Layer: 0
-  m_Name: MovePoint (6)
+  m_Name: WayPoint (6)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1710,7 +1710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 855489226}
   m_Layer: 0
-  m_Name: MovePoint (1)
+  m_Name: WayPoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1741,7 +1741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1006927563}
   m_Layer: 0
-  m_Name: MovePoint (12)
+  m_Name: WayPoint (12)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1772,7 +1772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1026213811}
   m_Layer: 0
-  m_Name: MovePoint (11)
+  m_Name: WayPoint (11)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1803,7 +1803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1097629183}
   m_Layer: 0
-  m_Name: MovePoint (10)
+  m_Name: WayPoint (10)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1834,7 +1834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1374644265}
   m_Layer: 0
-  m_Name: MovePoint (3)
+  m_Name: WayPoint (3)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1865,7 +1865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1463468489}
   m_Layer: 0
-  m_Name: MovePoint (4)
+  m_Name: WayPoint (4)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1896,7 +1896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1492316357}
   m_Layer: 0
-  m_Name: MovePoint (5)
+  m_Name: WayPoint (5)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1927,7 +1927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1869350256}
   m_Layer: 0
-  m_Name: MovePoint (8)
+  m_Name: WayPoint (8)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1958,7 +1958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1887553436}
   m_Layer: 0
-  m_Name: MovePoint (9)
+  m_Name: WayPoint (9)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1989,7 +1989,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2101739894}
   m_Layer: 0
-  m_Name: MovePoint (2)
+  m_Name: WayPoint (2)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2019,8 +2019,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2141839015}
+  - component: {fileID: 2141839016}
   m_Layer: 0
-  m_Name: MovePoints
+  m_Name: WayPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2053,6 +2054,18 @@ Transform:
   - {fileID: 1006927563}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2141839016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141839014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c09f5412011f64f9e366e1711658b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
