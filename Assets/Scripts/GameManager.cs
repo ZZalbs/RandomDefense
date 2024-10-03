@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    ObjectPoolManager poolManager;
+
     void Start()
     {
-        
+        poolManager = GetComponent<ObjectPoolManager>();
+        GameStart();
+    }
+
+    void GameStart()
+    {
+        poolManager.InitPool();
     }
 
     // Update is called once per frame

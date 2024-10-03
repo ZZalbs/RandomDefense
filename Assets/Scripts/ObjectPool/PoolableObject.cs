@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PoolableObject : MonoBehaviour
 {
-    public ObjectPool poolFromObj { get; set; }
+    public ObjectPoolManager poolManager { get; set; }
 
     public void ReturnToPool()
     {
         gameObject.SetActive(false);
-        poolFromObj.ReturnObject(this);
+        poolManager.ReturnObject(this);
     }
 }
