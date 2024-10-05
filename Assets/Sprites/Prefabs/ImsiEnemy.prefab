@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4939274408425992494}
   - component: {fileID: 2177718145969293097}
   - component: {fileID: 6984227265908865505}
-  - component: {fileID: -6698141675866785476}
   m_Layer: 0
   m_Name: ImsiEnemy
   m_TagString: Untagged
@@ -96,17 +95,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb5ac36d2529b554996e1387fb5014e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-6698141675866785476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6223768432952108669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 005569117ac489f48bc8da0835be62a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

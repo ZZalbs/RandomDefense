@@ -7,12 +7,21 @@ public class ObjectPoolManager: MonoBehaviour
     public List<GameObject> prefabList;
     [Tooltip("max Pool size per object")]
     public int initialPoolSize = 10;
-
     private Dictionary<GameObject,Dictionary<int,PoolableObject>> objPools = new Dictionary<GameObject, Dictionary<int, PoolableObject>>();
-
     private int nextPoolableObj_Id = 0;
 
-    public void InitPool()
+    //ΩÃ±€≈Ê
+	private static ObjectPoolManager privateInstance;
+	public static ObjectPoolManager public_Instance()
+	{
+		if (privateInstance == null)
+		{
+			privateInstance = new ObjectPoolManager();
+		}
+		return privateInstance;
+	}
+
+	public void InitPool()
     {
         foreach (var obj in prefabList)
         {
@@ -41,7 +50,7 @@ public class ObjectPoolManager: MonoBehaviour
         nextPoolableObj_Id = 0;
     }
 
-    public PoolableObject GetObjectInPool(GameObject obj)
+    public PoolableObject SpawnObject(GameObject obj)
     {
         if(!objPools.ContainsKey(obj))
         {

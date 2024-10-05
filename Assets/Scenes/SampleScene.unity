@@ -468,7 +468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 807448920}
   - component: {fileID: 807448919}
-  - component: {fileID: 807448918}
+  - component: {fileID: 807448921}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -476,20 +476,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &807448918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 807448917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 648d4fe3c2375844c8c010633390e769, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabNowUsing: {fileID: 0}
-  initialPoolSize: 10
 --- !u!114 &807448919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,6 +503,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &807448921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807448917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f87cadb647b5243bf245465a1b99d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabList:
+  - {fileID: 6223768432952108669, guid: 41afadfbeedfc35409a475036ebc7815, type: 3}
+  initialPoolSize: 10
 --- !u!1 &855489225
 GameObject:
   m_ObjectHideFlags: 0

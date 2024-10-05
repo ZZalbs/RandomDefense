@@ -15,7 +15,11 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator SpawnEnemyWithDelay(int enemyCnt,float SpawnDelay)
     {
-        yield return new WaitForSeconds(SpawnDelay);
+        for (int i = 0; i < enemyCnt; i++)
+        {
+
+            yield return new WaitForSeconds(SpawnDelay);
+        }
     }
     
 
