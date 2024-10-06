@@ -7,7 +7,9 @@ public class GameManager : MonoBehaviour
     ObjectPoolManager poolManager;
     EnemySpawner spawner;
 
-    void Start()
+	
+
+	void Start()
     {
         poolManager = GetComponent<ObjectPoolManager>();
         spawner = GetComponent<EnemySpawner>();
@@ -19,6 +21,7 @@ public class GameManager : MonoBehaviour
         poolManager.InitPool();
         spawner.SpawnEnemyStart(10); // 숫자 나중에 변수로 바꾸기
     }
+
 
     // Update is called once per frame
     void Update()
