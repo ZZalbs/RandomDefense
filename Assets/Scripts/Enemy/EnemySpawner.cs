@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemy;
-    public PoolableObject poolObj;
     [SerializeField] private float spawnDelay = 1.0f;
 
     public void SpawnEnemyStart(int enemyCnt)
@@ -17,7 +15,6 @@ public class EnemySpawner : MonoBehaviour
     {
         for (int i = 0; i < enemyCnt; i++)
         {
-
             yield return new WaitForSeconds(SpawnDelay);
         }
     }
