@@ -5,25 +5,31 @@ using UnityEngine;
 
 public class EnemyWaypoints : MonoBehaviour
 {
-    //싱글톤. 이거 나중에 게임매니저에 합치기
-    //https://velog.io/@xoaud321/Unity-%EC%9C%A0%EB%8B%88%ED%8B%B0-%EC%8B%B1%EA%B8%80%ED%84%B4-%ED%8C%A8%ED%84%B4-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%A7%90%EC%95%84-Singleton-Pattern
-    //참고
-    private static EnemyWaypoints priv_instance;
-    public static EnemyWaypoints pub_Instance()
-    {
-        if(priv_instance == null)
-        {
-            priv_instance = new EnemyWaypoints();
-        }
-        return priv_instance;
-    }
-
+    public static EnemyWaypoints pub_Instance { get; private set; }
 
     public Transform[] points;
+    public int length;
 
     private void Awake()
     {
-        points = new Transform[transform.childCount];
+        SetSingleTon();
+        SetWayPoint();
+    }
+
+    void SetSingleTon()
+    {
+        if(pub_Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        pub_Instance = this;
+    }
+
+    void SetWayPoint()
+    {
+        length = transform.childCount;
+        points = new Transform[length];
         for (int i = 0; i < points.Length; i++)
         {
             points[i] = transform.GetChild(i);
