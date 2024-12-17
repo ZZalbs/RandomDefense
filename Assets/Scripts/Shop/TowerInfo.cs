@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Tower Data", menuName = "Scriptable Object/Tower Data")]
-public class TowerData : ScriptableObject
+public class TowerInfo
 {
     [SerializeField]
     private string towerName;
@@ -12,15 +11,15 @@ public class TowerData : ScriptableObject
     [SerializeField]
     private string discription;
     public string pub_discription { get { return discription; } }
-    
+
     [SerializeField]
     private int appearLevel;
     public int pub_appearLevel { get { return appearLevel; } }
-    
+
     [SerializeField]
     private int dmg;
     public int pub_dmg { get { return dmg; } }
-    
+
     [SerializeField]
     private int atkDelay;
     public int pub_atkDelay { get { return atkDelay; } }
