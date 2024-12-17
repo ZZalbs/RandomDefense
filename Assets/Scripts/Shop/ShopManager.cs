@@ -10,18 +10,8 @@ public class ShopManager : MonoBehaviour
 
     TowerInfo PickRandomTower(int curLevel)
     {
-        int weight = 0;
-        int randomResult = getRandomNaturalNum(curLevel);
-        for(int i=0;i<towerList.Count;i++)
-        {
-            weight++;
-            if(randomResult<=weight)
-            {
-                TowerInfo selectTower = towerList[i];
-                return selectTower;
-            }
-        }
-        return null;
+        return towerList[getRandomNaturalNum(curLevel)];
+        
     }
 
     int getRandomNaturalNum(int max)
