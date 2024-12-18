@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TowerInfo
+public class TowerInfo:MonoBehaviour
 {
     [SerializeField]
     private string towerName;
