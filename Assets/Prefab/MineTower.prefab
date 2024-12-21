@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4474479029936938413}
   - component: {fileID: -5150002410373435966}
   m_Layer: 0
-  m_Name: PunchTower
+  m_Name: MineTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,9 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9946dd2cb42b79042b21f91400c1b298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerName: punch
-  discription: "\uD380\uCE58\uD0C0\uC6CC\uC785\uB2C8\uB2E4"
+  towerName: mine
+  discription: "\uAD11\uC0B0\uD0C0\uC6CC\uC785\uB2C8\uB2E4"
   appearLevel: 1
-  dmg: 1
+  dmg: 0
   atkDelay: 1
   range: 1
